@@ -17,7 +17,7 @@ export default function TasksScreen() {
 
   const getTasks = async () => {
     try {
-      const res = await axios.get("http://192.168.1.67:3000/tasks");
+      const res = await axios.get("http://${/*ip de la computadora*/}:3000/tasks");
       setTasks(res.data);
     } catch (err) {
       console.log(err);
