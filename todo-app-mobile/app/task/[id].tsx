@@ -26,7 +26,7 @@ export default function TaskDetail() {
 
   const getTask = async () => {
     try {
-      const response = await fetch(`http://192.168.1.67:3000/tasks/${id}`);
+      const response = await fetch(`http:${/*ip de la computadora*/}:3000/tasks/${id}`);
       const data = await response.json();
 
       setTask(data);
@@ -41,7 +41,7 @@ export default function TaskDetail() {
   };
 
   const updateTask = async () => {
-    await fetch(`http://192.168.1.67:3000/tasks/${id}`, {
+    await fetch(`http://${/*ip de la computadora*/}:3000/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +58,7 @@ export default function TaskDetail() {
   };
 
   const deleteTask = async () => {
-    await fetch(`http://192.168.1.67:3000/tasks/${id}`, {
+    await fetch(`${/*ip de la computadora*/}:3000/tasks/${id}`, {
       method: "DELETE",
     });
     alert("Tarea eliminada");
