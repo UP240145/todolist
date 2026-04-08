@@ -34,7 +34,7 @@ export default function CreateTask() {
       }),
     });
 
-    router.back(); // 🔥 regresa y se actualiza solo
+    router.back(); // regresa 
   };
 
   return (
