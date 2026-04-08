@@ -32,7 +32,7 @@ export default function TasksScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}>
-      {/* 🔥 BOTÓN AGREGAR */}
+      {/* BOTÓN AGREGAR */}
       <Pressable
         style={styles.addButton}
         onPress={() => router.push("/create")}
